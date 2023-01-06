@@ -1,0 +1,452 @@
+/* CSS Start Form Here */
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.container{
+    width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+/* Header Area Start */
+
+#header{
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 2px 2px #bfbcbc;
+    z-index: 9999;
+}
+
+.head_cont_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.head_cont_wrap h1{
+    margin: 0px;
+    font-family: 'Moon Dance', cursive;
+    font-size: 33px;
+    color: #ff5959;
+}
+
+.navigation nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.navigation nav ul li{
+    padding-left: 20px;
+    transition: 0.5s;
+}
+
+.navigation nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.navigation nav ul li:hover a{
+    text-decoration: underline;
+    color: #ff5959;
+}
+
+/* Header Area End */
+
+
+/* Head Section Start */
+
+.Head_Sec{
+    background-image: linear-gradient(to top, rgb(14, 14, 14), transparent 510px), url("../images/donation3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+}
+
+
+.Head_Sec_Txt h1 {
+    margin: 0;
+    font-size: 60px;
+    padding: 0 170px;
+}
+
+.Head_Sec_Txt p {
+    font-size: 16px;
+    padding: 0px 290px;
+    margin: 10px 0px 30px;
+}
+
+.Head_Sec_Txt {
+    padding: 220px 0 0;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#D_Button {
+    background-color: #ff5959;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    padding: 12px 22px;
+    display: grid;
+    place-content: center;
+    font-weight: 500;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+#D_Button:hover{
+    background-color: #da4242;
+}
+
+/* Head Section End */
+
+/* Pricing Section Start */
+
+#pricing, #Plan_Sec, #Contribute-1, #newslater{
+    width: 100%;
+    /* height: 100vh; */
+    padding-top: 120px;
+    background-color: #fff;
+}
+
+.sec_Title {
+    text-align: center;
+}
+
+.sec_Title h2 {
+    font-size: 45px;
+    letter-spacing: -2px;
+    margin-bottom: 15px;
+    color:#121212;
+}
+
+.sec_Title p{
+    color: #707070;
+    padding: 0px 260px;
+    font-weight: 500;
+}
+
+.selected_price_box div h4 {
+    color: #707070;
+    font-size: 35px;
+}
+
+.selected_price_box div {
+    width: 16.66%;
+    background: #fafafa;
+    border: 1px solid #fafafa;
+    display: grid;
+    place-items: center;
+    padding: 50px 15px;
+    margin-right: 25px;
+    border-radius: 7px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.selected_price_box div:first-child{
+    background-color: #ffeeee;
+    border: 1px solid #ff5959;
+}
+
+.selected_price_box div:first-child > h4{
+    color: #ff5959;
+}
+
+.selected_price_box div:hover{
+    background-color: #ffeeee;
+    border: 1px solid #ff5959;
+}
+
+.selected_price_box div:hover > h4{
+    color: #da4242;
+}
+
+.selected_price_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 70px 0 60px;
+}
+
+.selected_price_box div:last-child {
+    margin-right: 0;
+}
+
+.custom_price_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 750px;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.custom_price_box form {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.custom_price_box form input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #dadada;
+    margin-bottom: 30px;
+    text-align: center;
+    outline: none;
+    font-size: 18px;
+    color: #4c4c4c;
+}
+
+.custom_price_box form input::placeholder{
+    font-size: 20px;
+    color: #bdbdbd;
+}
+
+/* Pricing Section End */
+
+
+/* Plan Section Start */
+
+.plan_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+.plan_box{
+    width: 30%;
+    margin: 0px 40px 40px 0px;
+    padding: 60px 20px 50px;
+    padding-right: 40px;
+    border-radius: 11px;
+    transition: 0.5s;
+}
+
+.plan_box:hover{
+    transform: scale(1.1);
+}
+
+.plan_box:nth-child(3), .plan_box:nth-child(6){
+    margin-right: 0;
+} 
+
+.plan_box-1, .plan_box-6{
+    background-color: #edf5f6;
+}
+
+.plan_box-2, .plan_box-5{
+    background-color: #ffeeee;
+}
+
+.plan_box-3, .plan_box-4{
+    background-color:#fff4d6;
+}
+
+.plan_ico img {
+    width: 100%;
+}
+
+.plan_ico {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.plan_txt p {
+    color: #707070;
+    font-size: 15px;
+    text-align: justify;
+    margin-top: 11px;
+}
+
+.plan_txt h3 {
+    font-size: 25px;
+}
+
+.plan_box-4 {
+    padding-top: 15px;
+    margin-top: 26px;
+}
+
+.plan_box-4 > .plan_ico {
+    margin-top: 40px;
+}
+
+/* Plan Section End */
+
+/* Contribute-1 Section Start */
+
+.contri_1_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conri_1_img img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.contri_1_txt, .conri_1_img {
+    width: 50%;
+}
+
+#how_con_But {
+    background-color: #ff5959;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    padding: 12px 22px;
+    display: grid;
+    place-content: center;
+    font-weight: 500;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+#how_con_But:hover{
+    background-color: #da4242;
+}
+
+.contri_1_txt h2 {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.contri_1_txt {
+    margin-right: 60px;
+}
+
+.contri_1_txt p {
+    color: #707070;
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.conri_2_img {
+    margin-right: 60px;
+}
+
+/* Contribute-1 Section End */
+
+
+
+/* Newslatter Start */
+.newsletter_box {
+    margin: auto;
+    margin-top: 110px;
+    width: 800px;
+    height: 200px;
+    background: #fff4d6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#newslater {
+    padding-bottom: 120px;
+}
+
+.newsletter_box form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter_box form input {
+    border: navajowhite;
+    background: #d9d9d9;
+    height: 50px;
+    width: 300px;
+    padding-left: 12px;
+    border-radius: 10px 0px 0px 10px;
+    outline: none;
+    font-size: 17px;
+    color: #4c4c4c;
+}
+
+#Subs_BTN {
+    background-color: #ff5959;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    color: #fff;
+    display: grid;
+    place-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.5s;
+    height: 50px;
+    width: 160px;
+}
+
+#Subs_BTN:hover{
+    background-color: #da4242;
+}
+
+.newsletter_box form input::placeholder {
+    color: #aa9f9f;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Newslatter End */
+
+
+/* Footer Start */
+
+#footer{
+    background-color: #0b0d17;
+    padding: 40px 0px;
+    text-align: center;
+}
+
+.foot_cont_wrapper h3 {
+    color: #ff5959;
+    font-family: 'Moon Dance', cursive;
+    font-size: 45px;
+}
+
+.foot_cont_wrapper p {
+    color: #d9dbe1;
+    font-size: 13px;
+}
+
+
+/* Footer End */
